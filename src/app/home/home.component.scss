@@ -1,0 +1,55 @@
+.home-cover {
+  background-image: url("../../assets/images/cover.jpeg");
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  position: relative;
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.158);
+    .btn-book {
+      position: absolute;
+      top: 260px;
+      background-color: #ffd204;
+      width: 90%;
+      border-radius: 50px;
+      height: 60px;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+    }
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.404);
+      .btn-book {
+        transition: all 0.3s ease;
+        top: 240px;
+        box-shadow: 0 2px 18px rgba(0, 0, 0, 0.5);
+        text-shadow: 1px -1px 0 hsla(0, 0%, 100%, 0.4);
+      }
+    }
+  }
+}
+.locations {
+  padding: 50px 0;
+  .c-img {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    box-shadow:-1px 2px 8px 5px rgba(0, 0, 0, 0.1);
+    img {
+      width: 160px;
+      height: 160px;
+      padding: 15px;
+      &:hover {
+        transition: all 0.3s ease;
+        box-shadow: 2px 9px 10px 5px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
