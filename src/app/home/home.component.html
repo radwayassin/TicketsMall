@@ -37,8 +37,10 @@
 </div>
 <div class="events">
     <div class="container">
-        <div class="col-md-3">
-            <app-card></app-card>
+        <div class="row">
+            <div class="col-md-3 d-flex justify-content-center" *ngFor="let c of CardData">
+                <app-card [c]="c"></app-card>
+            </div>
         </div>
     </div>
 </div>
